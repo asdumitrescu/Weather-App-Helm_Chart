@@ -1,0 +1,13 @@
+replicaCount: 1
+image:
+  repository: asdumitrescu/andrei
+  tag: latest
+app:
+  name: weatherapp
+  port: 5000
+  envVar: "Production"  # Assuming this is the variable value for 'ENVIRONMENT'
+service:
+  type: NodePort
+  port: 30022
+  targetPort: 5000
+
