@@ -1,7 +1,7 @@
 replicaCount: 3
 image:
   repository: asdumitrescu/andrei
-  tag: "1.7"
+  tag: "1.8"
 app:
   name: weatherapp
   port: 5000
