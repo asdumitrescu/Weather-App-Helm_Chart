@@ -8,6 +8,7 @@ app:
   envVar: "Production"  # Assuming this is the variable value for 'ENVIRONMENT'
 service:
   type: NodePort
-  port: 30022
+  port: 30010
+  nodePort: 30000
   targetPort: 5000
 
