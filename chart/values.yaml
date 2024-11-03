@@ -1,14 +1,13 @@
 replicaCount: 3
 image:
-  repository: asdumitrescu/andrei
+  repository: asdumitrescu/weather-app
+  pullPolicy: IfNotPresent
   tag: latest
-app:
-  name: weatherapp
-  port: 5000
-  envVar: "Production"  # Assuming this is the variable value for 'ENVIRONMENT'
+
 service:
-  type: NodePort
-  port: 30010
-  nodePort: 30000
+  type: ClusterIP
+  port: 80
   targetPort: 5000
+  
+resources: {}
 
