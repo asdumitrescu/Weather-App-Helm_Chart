@@ -1,8 +1,7 @@
 replicaCount: 3
 image:
   repository: asdumitrescu/weather-app
-  tag: latest
-
+  tag: ""
 app:
   name: weatherapp
   port: 5000
@@ -11,4 +10,3 @@ service:
   port: 30010
   nodePort: 30000
   targetPort: 5000
-
