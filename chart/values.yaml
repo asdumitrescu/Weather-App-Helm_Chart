@@ -8,5 +8,4 @@ app:
 service:
   type: LoadBalancer
   port: 30010
-  nodePort: 30000
   targetPort: 5000
