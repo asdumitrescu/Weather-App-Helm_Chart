@@ -1,12 +1,12 @@
 replicaCount: 3
 image:
   repository: asdumitrescu/weather-app
-  tag: "button-left-menu"
+  tag: "main"
 app:
   name: weatherapp
   port: 5000
 service:
-  type: ClusterIP  
+  type: ClusterIP
   port: 30010
   targetPort: 5000
 ingress:
