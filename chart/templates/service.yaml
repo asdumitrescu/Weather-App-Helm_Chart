@@ -12,7 +12,7 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       targetPort: {{ .Values.service.targetPort }}
-      nodePort: {{ .Values.service.nodePort | default 30010 }}  # Optional: specify a default NodePort if needed
+      nodePort: {{ .Values.service.nodePort }}  # Optional: specify a default NodePort if needed
   selector:
     app: {{ .Values.app.name }}
 
