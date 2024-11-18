@@ -1,7 +1,7 @@
 replicaCount: 3
 image:
   repository: asdumitrescu/weather-app
-  tag: "button-left-menu"
+  tag: "main"
 app:
   name: weatherapp
   port: 5000
